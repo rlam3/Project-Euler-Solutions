@@ -30,34 +30,38 @@ package main
 import "fmt"
 
 func isPrime(value int) bool {
-	var isValuePrime = false
 
-	fmt.Printf("Checking....%d isPrime...\n", value)
-	for i := 2; i <= value; i++ {
+	// fmt.Printf("Checking....%d...\n", value)
+	for i := 3; i < value; i++ {
 
-		if value%i == 0 && value%2 == 0 {
-			isValuePrime = false
+		if value%2 == 0 {
+			// isValuePrime = false
+			// fmt.Printf("%d is NOT PRIME\n", value)
+			// break
+			return false
 		}
 
+		// if value == 185 {
+		// 	fmt.Printf("Checking....%d...\n", value)
+		// }
 		// If there is a number divisible under value, it is not a prime number
 		if value%i == 0 {
-			fmt.Printf("%d is NOT PRIME\n", value)
-			isValuePrime = false
+			if i == 185 {
+				fmt.Printf("%d is NOT PRIME\n", value)
+			}
+			return false
 		}
 
-		if value%i == 0 && value == i {
-			fmt.Printf("%d is PRIME\n", value)
-			isValuePrime = true
-		}
+		// fmt.Printf("%d is PRIME\n", value)
 	}
-	return isValuePrime
+	return true
 }
 
 func main() {
 	fmt.Println("problem 3")
 	// fmt.Printf("%t\n", isPrime(3))
 	var listOfPrimesDivisible []int
-	const largeNumber = 111
+	const largeNumber = 600851475143
 
 	for i := 2; i <= largeNumber; i++ {
 		if isPrime(i) {
@@ -66,7 +70,7 @@ func main() {
 				listOfPrimesDivisible = append(listOfPrimesDivisible, i)
 			}
 		}
+		fmt.Println(listOfPrimesDivisible)
 	}
 
-	fmt.Println(listOfPrimesDivisible)
 }
