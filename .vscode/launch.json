@@ -9,7 +9,7 @@
       "type": "go",
       "request": "launch",
       "mode": "auto",
-      "program": "${workspaceFolder}/p002.go",
+      "program": "${workspaceFolder}",
       "env": {},
       "args": [],
       "showLog": false
