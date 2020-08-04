@@ -8,7 +8,7 @@
 // they are non divisible by any other number but itself.
 // a composite number
 
-// Approach 1
+// Approach 1 - Brute force
 // make a list of prime numbers and test out each prime number until you reach the highest one.
 // Highest prime number should not be larger than the number given.
 // Make a list of prime numbers that the current number given is a prime number of
