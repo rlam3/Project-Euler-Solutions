@@ -6,13 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:unit": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint --ext js,ts,tsx src/**/* --ignore-path .gitignore .",
+    "lint:fix": "eslint --cache fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
     "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
     "jest": "^26.5.2",
     "ts-jest": "^26.4.1",
     "ts-node": "^9.0.0",
