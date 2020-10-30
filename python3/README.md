@@ -36,7 +36,7 @@ cz commit
 
 git push 
 
-# You're done
+# You're done!
 ```
 
 ### Running tests
