@@ -16,7 +16,30 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 poetry install
 ```
 
-### 3. Running tests
+### 3. Development
+
+```bash
+mkdir src/pXXX
+
+# go into shell
+poetry shell
+poetry env info
+
+# Use iPython to code and debug solutions.
+ipython
+
+# once finished editing
+git add . 
+cz commit
+
+# run through the prompt
+
+git push 
+
+# You're done
+```
+
+### Running tests
 
 ```bash
 cd /projectEuler/python3
