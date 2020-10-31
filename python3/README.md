@@ -29,12 +29,22 @@ poetry env info
 ipython
 
 # once finished editing
-git add . 
+git add .
 cz commit
+
+# OR
+
+git add .
+git commit
+
+# OR run hooks manually. This will not commit
+
+git add .
+pre-commit run
 
 # run through the prompt
 
-git push 
+git push
 
 # You're done!
 ```
