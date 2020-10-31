@@ -7,18 +7,43 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:unit": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint --ext js,ts,tsx src/**/* --ignore-path .gitignore .",
-    "lint:fix": "eslint --cache fix"
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.ts --ignore-path .gitignore",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "npm run lint",
+      "git add ."
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
+    "commitizen": "^4.2.2",
     "eslint": "^7.10.0",
+    "husky": "^4.3.0",
     "jest": "^26.5.2",
+    "lint-staged": "^10.5.0",
     "ts-jest": "^26.4.1",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
