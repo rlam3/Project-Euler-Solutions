@@ -10,6 +10,8 @@ npm install
 npm run test:unit
 ```
 
+### Commiting code within typescript
+
 ### Run Jest only in dev with watch
 
 ```
