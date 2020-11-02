@@ -11,11 +11,13 @@ repos:
     rev: 20.8b1
     hooks:
       - id: black
+        files: ^python3/
 
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
     hooks:
       - id: flake8
+        files: ^python3/
 
   - repo: https://github.com/timothycrosley/isort
     rev: 5.6.4
@@ -23,6 +25,7 @@ repos:
       - id: isort
         additional_dependencies: [toml]
         exclude: ^.*/?setup\.py$
+        files: ^python3/
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.3.0
