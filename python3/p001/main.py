@@ -38,7 +38,8 @@ def findSum(multiples, num):
     for i in range(0, num):
         for j in multiples:
             # Find if it is a multiple
-            if (i % j == 0):
+            if i % j == 0:
                 # import pdb; pdb.set_trace()
                 sum += i
+    print(sum)
     return sum
