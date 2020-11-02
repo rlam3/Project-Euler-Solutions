@@ -18,5 +18,3 @@ function findSum(multiples: number[], num: number): number {
 }
 
 module.exports = findSum
-
-console.log('hello')
