@@ -5,6 +5,7 @@ class TestFindSum(object):
     """
     This function is to test main.py's functions
     """
+
     def test_findSum_10(self):
         assert findSum([3, 5], 10) == 23
 
