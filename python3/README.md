@@ -46,8 +46,11 @@ pre-commit run
 cz commit
 
 # OR
+cd /projectEuler/python3
+poetry shell
+pre-commit install --hook-type commit-msg
 git add .
-cz z
+cz c
 # run through the prompt from commitizen
 # then it will lint check with pre-commit
 
