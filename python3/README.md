@@ -93,3 +93,14 @@ pytest /src/pXX/test_main.py
 
 pytest -v
 ```
+
+
+
+### Using pre-commit
+
+https://pre-commit.com/#plugins
+
+You can update your hooks to the latest version automatically by running `pre-commit autoupdate`. By default, this will bring the hooks to the latest tag on the default branch.
+
+
+pre-commit run --all-files
