@@ -46,6 +46,7 @@ pre-commit run
 cz commit
 
 # OR
+
 cd /projectEuler/python3
 poetry shell
 pre-commit install --hook-type commit-msg
@@ -53,6 +54,21 @@ git add .
 cz c
 # run through the prompt from commitizen
 # then it will lint check with pre-commit
+
+husky > pre-commit (node v14.16.1)
+ℹ No staged files match any configured task.
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /Users/user-xyz/.cache/pre-commit/patch1621857346.
+commitizen check.....................................(no files to check)Skipped
+black................................................(no files to check)Skipped
+flake8...............................................(no files to check)Skipped
+isort................................................(no files to check)Skipped
+Debug Statements (Python)............................(no files to check)Skipped
+[INFO] Restored changes from /Users/user-xyz/.cache/pre-commit/patch1621857346.
+
+[master 850b35a] docs(readme.md): updating commitizen docs
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
 
 # once you're finished with passing checks, you can push
 git push
