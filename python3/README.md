@@ -104,3 +104,16 @@ You can update your hooks to the latest version automatically by running `pre-co
 
 
 pre-commit run --all-files
+
+
+### Commiting changes
+
+```sh
+git add #.. file here
+
+cz c --dry-run
+
+cz c 
+
+git push
+```
