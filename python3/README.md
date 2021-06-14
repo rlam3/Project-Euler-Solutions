@@ -92,6 +92,10 @@ pytest /src/pXX/test_main.py
 # OR run on all with verbose turned ON
 
 pytest -v
+
+pytest --help
+pytest --co # discover all tests 
+
 ```
 
 
