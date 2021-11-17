@@ -24,3 +24,4 @@ def find_largest_prime_factor(number: int) -> int:
             l_prime.append(x)
 
     return l_prime[-1]
+
